@@ -1,0 +1,30 @@
+{
+  "episodes": 100,
+  "samples": 39795,
+  "fps": 30,
+  "state_dim": 16,
+  "action_dim": 6,
+  "joint_names": [
+    "base_yaw",
+    "shoulder_pitch",
+    "elbow_pitch",
+    "wrist_pitch",
+    "wrist_roll",
+    "gripper"
+  ],
+  "subgoals": [
+    "MOVE(beaker_A)",
+    "PICK_1(beaker_A)",
+    "MOVE(beaker_B)",
+    "POUR(beaker_A, beaker_B, 20ml)",
+    "MOVE(beaker_A_origin)",
+    "RELEASE(beaker_A_origin)",
+    "MOVE(glass_rod)",
+    "PICK_2(glass_rod)",
+    "MOVE(beaker_B)",
+    "STIR(5)",
+    "RELEASE(glass_rod_origin)",
+    "MOVE(home)"
+  ],
+  "description": "100 synthetic demonstrations for LLM subgoal-conditioned 6-axis robot manipulation."
+}

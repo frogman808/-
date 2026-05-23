@@ -1,0 +1,10 @@
+{
+  "dataset": "C:\\Users\\A\\Desktop\\\ud5c8\ub2c8\ubc84\ud130\ub450\ucac0\ub9c8\ub77c\ud0d5\ud6c4\ub8e8\\submission\\artifacts\\dataset_100_episodes.jsonl",
+  "checkpoint": "C:\\Users\\A\\Desktop\\\ud5c8\ub2c8\ubc84\ud130\ub450\ucac0\ub9c8\ub77c\ud0d5\ud6c4\ub8e8\\submission\\artifacts\\policy_mlp.json",
+  "samples": 39795,
+  "epochs": 60,
+  "best_val_loss": 0.0017454743150126907,
+  "final_train_loss": 0.0017834531396938053,
+  "final_val_loss": 0.0017455498236585633,
+  "final_rmse_degrees": 7.5203599838397
+}

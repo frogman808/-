@@ -1,0 +1,1673 @@
+{
+  "command": "Move A beaker content to B beaker, stir for 5 seconds, return home",
+  "plan": [
+    {
+      "index": 0,
+      "name": "MOVE",
+      "args": [
+        "beaker_A"
+      ],
+      "rationale": "Subgoal 1 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 1,
+      "name": "PICK_1",
+      "args": [
+        "beaker_A"
+      ],
+      "rationale": "Subgoal 2 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 2,
+      "name": "MOVE",
+      "args": [
+        "beaker_B"
+      ],
+      "rationale": "Subgoal 3 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 3,
+      "name": "POUR",
+      "args": [
+        "beaker_A",
+        "beaker_B",
+        "20ml"
+      ],
+      "rationale": "Subgoal 4 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 4,
+      "name": "MOVE",
+      "args": [
+        "beaker_A_origin"
+      ],
+      "rationale": "Subgoal 5 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 5,
+      "name": "RELEASE",
+      "args": [
+        "beaker_A_origin"
+      ],
+      "rationale": "Subgoal 6 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 6,
+      "name": "MOVE",
+      "args": [
+        "glass_rod"
+      ],
+      "rationale": "Subgoal 7 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 7,
+      "name": "PICK_2",
+      "args": [
+        "glass_rod"
+      ],
+      "rationale": "Subgoal 8 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 8,
+      "name": "MOVE",
+      "args": [
+        "beaker_B"
+      ],
+      "rationale": "Subgoal 9 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 9,
+      "name": "STIR",
+      "args": [
+        "5"
+      ],
+      "rationale": "Subgoal 10 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 10,
+      "name": "RELEASE",
+      "args": [
+        "glass_rod_origin"
+      ],
+      "rationale": "Subgoal 11 keeps the manipulation order physically valid."
+    },
+    {
+      "index": 11,
+      "name": "MOVE",
+      "args": [
+        "home"
+      ],
+      "rationale": "Subgoal 12 keeps the manipulation order physically valid."
+    }
+  ],
+  "frames": [
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": -6.7991,
+        "shoulder_pitch": -40.6856,
+        "elbow_pitch": 82.2581,
+        "wrist_pitch": -41.3528,
+        "wrist_roll": -0.005,
+        "gripper": 62.9275
+      }
+    },
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": -11.4796,
+        "shoulder_pitch": -39.7808,
+        "elbow_pitch": 81.059,
+        "wrist_pitch": -40.9073,
+        "wrist_roll": -0.0084,
+        "gripper": 63.566
+      }
+    },
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": -14.7016,
+        "shoulder_pitch": -39.1579,
+        "elbow_pitch": 80.2335,
+        "wrist_pitch": -40.6006,
+        "wrist_roll": -0.0108,
+        "gripper": 64.0056
+      }
+    },
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": -16.9197,
+        "shoulder_pitch": -38.7292,
+        "elbow_pitch": 79.6653,
+        "wrist_pitch": -40.3895,
+        "wrist_roll": -0.0124,
+        "gripper": 64.3082
+      }
+    },
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": -18.4466,
+        "shoulder_pitch": -38.434,
+        "elbow_pitch": 79.2741,
+        "wrist_pitch": -40.2441,
+        "wrist_roll": -0.0135,
+        "gripper": 64.5165
+      }
+    },
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": -19.4977,
+        "shoulder_pitch": -38.2308,
+        "elbow_pitch": 79.0048,
+        "wrist_pitch": -40.1441,
+        "wrist_roll": -0.0143,
+        "gripper": 64.6599
+      }
+    },
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": -20.2213,
+        "shoulder_pitch": -38.0909,
+        "elbow_pitch": 78.8194,
+        "wrist_pitch": -40.0752,
+        "wrist_roll": -0.0148,
+        "gripper": 64.7586
+      }
+    },
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": -20.7194,
+        "shoulder_pitch": -37.9946,
+        "elbow_pitch": 78.6918,
+        "wrist_pitch": -40.0278,
+        "wrist_roll": -0.0152,
+        "gripper": 64.8265
+      }
+    },
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": -21.0623,
+        "shoulder_pitch": -37.9283,
+        "elbow_pitch": 78.604,
+        "wrist_pitch": -39.9951,
+        "wrist_roll": -0.0155,
+        "gripper": 64.8733
+      }
+    },
+    {
+      "subgoal_id": 0,
+      "subgoal": "MOVE(beaker_A)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": -21.2984,
+        "shoulder_pitch": -37.8827,
+        "elbow_pitch": 78.5435,
+        "wrist_pitch": -39.9727,
+        "wrist_roll": -0.0156,
+        "gripper": 64.9055
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": -27.859,
+        "shoulder_pitch": -37.4642,
+        "elbow_pitch": 78.0253,
+        "wrist_pitch": -40.3478,
+        "wrist_roll": 0.0107,
+        "gripper": 57.718
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": -32.3754,
+        "shoulder_pitch": -37.1762,
+        "elbow_pitch": 77.6686,
+        "wrist_pitch": -40.606,
+        "wrist_roll": 0.0288,
+        "gripper": 52.7702
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": -35.4844,
+        "shoulder_pitch": -36.9778,
+        "elbow_pitch": 77.423,
+        "wrist_pitch": -40.7838,
+        "wrist_roll": 0.0413,
+        "gripper": 49.364
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": -37.6247,
+        "shoulder_pitch": -36.8413,
+        "elbow_pitch": 77.254,
+        "wrist_pitch": -40.9062,
+        "wrist_roll": 0.0499,
+        "gripper": 47.0193
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": -39.098,
+        "shoulder_pitch": -36.7474,
+        "elbow_pitch": 77.1376,
+        "wrist_pitch": -40.9904,
+        "wrist_roll": 0.0558,
+        "gripper": 45.4051
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": -40.1123,
+        "shoulder_pitch": -36.6827,
+        "elbow_pitch": 77.0575,
+        "wrist_pitch": -41.0484,
+        "wrist_roll": 0.0598,
+        "gripper": 44.294
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": -40.8105,
+        "shoulder_pitch": -36.6381,
+        "elbow_pitch": 77.0024,
+        "wrist_pitch": -41.0883,
+        "wrist_roll": 0.0626,
+        "gripper": 43.529
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": -41.2912,
+        "shoulder_pitch": -36.6075,
+        "elbow_pitch": 76.9644,
+        "wrist_pitch": -41.1158,
+        "wrist_roll": 0.0646,
+        "gripper": 43.0025
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": -41.622,
+        "shoulder_pitch": -36.5864,
+        "elbow_pitch": 76.9383,
+        "wrist_pitch": -41.1347,
+        "wrist_roll": 0.0659,
+        "gripper": 42.64
+      }
+    },
+    {
+      "subgoal_id": 1,
+      "subgoal": "PICK_1(beaker_A)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": -41.8498,
+        "shoulder_pitch": -36.5718,
+        "elbow_pitch": 76.9203,
+        "wrist_pitch": -41.1478,
+        "wrist_roll": 0.0668,
+        "gripper": 42.3904
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": -29.2624,
+        "shoulder_pitch": -36.0314,
+        "elbow_pitch": 76.2148,
+        "wrist_pitch": -40.7863,
+        "wrist_roll": 0.0438,
+        "gripper": 34.7675
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": -20.5973,
+        "shoulder_pitch": -35.6593,
+        "elbow_pitch": 75.7292,
+        "wrist_pitch": -40.5374,
+        "wrist_roll": 0.0279,
+        "gripper": 29.52
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": -14.6322,
+        "shoulder_pitch": -35.4032,
+        "elbow_pitch": 75.3948,
+        "wrist_pitch": -40.3661,
+        "wrist_roll": 0.017,
+        "gripper": 25.9075
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": -10.5258,
+        "shoulder_pitch": -35.2268,
+        "elbow_pitch": 75.1647,
+        "wrist_pitch": -40.2482,
+        "wrist_roll": 0.0095,
+        "gripper": 23.4207
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": -7.699,
+        "shoulder_pitch": -35.1055,
+        "elbow_pitch": 75.0062,
+        "wrist_pitch": -40.167,
+        "wrist_roll": 0.0044,
+        "gripper": 21.7088
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": -5.753,
+        "shoulder_pitch": -35.0219,
+        "elbow_pitch": 74.8972,
+        "wrist_pitch": -40.1111,
+        "wrist_roll": 0.0008,
+        "gripper": 20.5303
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": -4.4134,
+        "shoulder_pitch": -34.9644,
+        "elbow_pitch": 74.8221,
+        "wrist_pitch": -40.0726,
+        "wrist_roll": -0.0017,
+        "gripper": 19.7191
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": -3.4912,
+        "shoulder_pitch": -34.9248,
+        "elbow_pitch": 74.7704,
+        "wrist_pitch": -40.0461,
+        "wrist_roll": -0.0033,
+        "gripper": 19.1606
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": -2.8564,
+        "shoulder_pitch": -34.8975,
+        "elbow_pitch": 74.7348,
+        "wrist_pitch": -40.0279,
+        "wrist_roll": -0.0045,
+        "gripper": 18.7761
+      }
+    },
+    {
+      "subgoal_id": 2,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": -2.4194,
+        "shoulder_pitch": -34.8788,
+        "elbow_pitch": 74.7103,
+        "wrist_pitch": -40.0153,
+        "wrist_roll": -0.0053,
+        "gripper": 18.5115
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": 10.7613,
+        "shoulder_pitch": -32.9915,
+        "elbow_pitch": 72.2074,
+        "wrist_pitch": -44.8768,
+        "wrist_roll": 13.2763,
+        "gripper": 18.3401
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": 19.8349,
+        "shoulder_pitch": -31.6924,
+        "elbow_pitch": 70.4844,
+        "wrist_pitch": -48.2235,
+        "wrist_roll": 22.4194,
+        "gripper": 18.2221
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": 26.0811,
+        "shoulder_pitch": -30.7981,
+        "elbow_pitch": 69.2983,
+        "wrist_pitch": -50.5273,
+        "wrist_roll": 28.7134,
+        "gripper": 18.1409
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": 30.381,
+        "shoulder_pitch": -30.1824,
+        "elbow_pitch": 68.4817,
+        "wrist_pitch": -52.1133,
+        "wrist_roll": 33.0463,
+        "gripper": 18.085
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": 33.3411,
+        "shoulder_pitch": -29.7586,
+        "elbow_pitch": 67.9196,
+        "wrist_pitch": -53.2051,
+        "wrist_roll": 36.029,
+        "gripper": 18.0465
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": 35.3788,
+        "shoulder_pitch": -29.4668,
+        "elbow_pitch": 67.5327,
+        "wrist_pitch": -53.9566,
+        "wrist_roll": 38.0823,
+        "gripper": 18.02
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": 36.7816,
+        "shoulder_pitch": -29.266,
+        "elbow_pitch": 67.2663,
+        "wrist_pitch": -54.474,
+        "wrist_roll": 39.4958,
+        "gripper": 18.0018
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": 37.7472,
+        "shoulder_pitch": -29.1277,
+        "elbow_pitch": 67.0829,
+        "wrist_pitch": -54.8302,
+        "wrist_roll": 40.4689,
+        "gripper": 17.9893
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": 38.412,
+        "shoulder_pitch": -29.0325,
+        "elbow_pitch": 66.9567,
+        "wrist_pitch": -55.0754,
+        "wrist_roll": 41.1387,
+        "gripper": 17.9806
+      }
+    },
+    {
+      "subgoal_id": 3,
+      "subgoal": "POUR(beaker_A, beaker_B, 20ml)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": 38.8696,
+        "shoulder_pitch": -28.967,
+        "elbow_pitch": 66.8698,
+        "wrist_pitch": -55.2442,
+        "wrist_roll": 41.5998,
+        "gripper": 17.9747
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": 26.3381,
+        "shoulder_pitch": -29.4397,
+        "elbow_pitch": 67.4717,
+        "wrist_pitch": -55.3234,
+        "wrist_roll": 41.1169,
+        "gripper": 17.9671
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": 17.7113,
+        "shoulder_pitch": -29.7651,
+        "elbow_pitch": 67.886,
+        "wrist_pitch": -55.378,
+        "wrist_roll": 40.7844,
+        "gripper": 17.962
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": 11.7727,
+        "shoulder_pitch": -29.9891,
+        "elbow_pitch": 68.1712,
+        "wrist_pitch": -55.4155,
+        "wrist_roll": 40.5555,
+        "gripper": 17.9584
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": 7.6846,
+        "shoulder_pitch": -30.1433,
+        "elbow_pitch": 68.3675,
+        "wrist_pitch": -55.4414,
+        "wrist_roll": 40.398,
+        "gripper": 17.956
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": 4.8703,
+        "shoulder_pitch": -30.2495,
+        "elbow_pitch": 68.5027,
+        "wrist_pitch": -55.4592,
+        "wrist_roll": 40.2895,
+        "gripper": 17.9543
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": 2.9329,
+        "shoulder_pitch": -30.3226,
+        "elbow_pitch": 68.5957,
+        "wrist_pitch": -55.4714,
+        "wrist_roll": 40.2149,
+        "gripper": 17.9531
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": 1.5993,
+        "shoulder_pitch": -30.3729,
+        "elbow_pitch": 68.6598,
+        "wrist_pitch": -55.4798,
+        "wrist_roll": 40.1635,
+        "gripper": 17.9523
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": 0.6812,
+        "shoulder_pitch": -30.4075,
+        "elbow_pitch": 68.7039,
+        "wrist_pitch": -55.4856,
+        "wrist_roll": 40.1281,
+        "gripper": 17.9518
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": 0.0491,
+        "shoulder_pitch": -30.4314,
+        "elbow_pitch": 68.7342,
+        "wrist_pitch": -55.4896,
+        "wrist_roll": 40.1037,
+        "gripper": 17.9514
+      }
+    },
+    {
+      "subgoal_id": 4,
+      "subgoal": "MOVE(beaker_A_origin)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": -0.3859,
+        "shoulder_pitch": -30.4478,
+        "elbow_pitch": 68.7551,
+        "wrist_pitch": -55.4924,
+        "wrist_roll": 40.0869,
+        "gripper": 17.9511
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": -13.4662,
+        "shoulder_pitch": -31.5282,
+        "elbow_pitch": 70.1356,
+        "wrist_pitch": -50.072,
+        "wrist_roll": 27.6019,
+        "gripper": 26.1634
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": -22.4706,
+        "shoulder_pitch": -32.272,
+        "elbow_pitch": 71.0859,
+        "wrist_pitch": -46.3406,
+        "wrist_roll": 19.0071,
+        "gripper": 31.8167
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": -28.6693,
+        "shoulder_pitch": -32.784,
+        "elbow_pitch": 71.74,
+        "wrist_pitch": -43.7719,
+        "wrist_roll": 13.0905,
+        "gripper": 35.7085
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": -32.9364,
+        "shoulder_pitch": -33.1365,
+        "elbow_pitch": 72.1904,
+        "wrist_pitch": -42.0036,
+        "wrist_roll": 9.0175,
+        "gripper": 38.3875
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": -35.8739,
+        "shoulder_pitch": -33.3791,
+        "elbow_pitch": 72.5004,
+        "wrist_pitch": -40.7863,
+        "wrist_roll": 6.2137,
+        "gripper": 40.2318
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": -37.8961,
+        "shoulder_pitch": -33.5462,
+        "elbow_pitch": 72.7138,
+        "wrist_pitch": -39.9483,
+        "wrist_roll": 4.2835,
+        "gripper": 41.5014
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": -39.2882,
+        "shoulder_pitch": -33.6612,
+        "elbow_pitch": 72.8607,
+        "wrist_pitch": -39.3714,
+        "wrist_roll": 2.9547,
+        "gripper": 42.3754
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": -40.2465,
+        "shoulder_pitch": -33.7403,
+        "elbow_pitch": 72.9618,
+        "wrist_pitch": -38.9743,
+        "wrist_roll": 2.0401,
+        "gripper": 42.9771
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": -40.9062,
+        "shoulder_pitch": -33.7948,
+        "elbow_pitch": 73.0315,
+        "wrist_pitch": -38.701,
+        "wrist_roll": 1.4104,
+        "gripper": 43.3913
+      }
+    },
+    {
+      "subgoal_id": 5,
+      "subgoal": "RELEASE(beaker_A_origin)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": -41.3603,
+        "shoulder_pitch": -33.8323,
+        "elbow_pitch": 73.0794,
+        "wrist_pitch": -38.5128,
+        "wrist_roll": 0.9769,
+        "gripper": 43.6764
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": -34.9368,
+        "shoulder_pitch": -33.051,
+        "elbow_pitch": 71.8732,
+        "wrist_pitch": -38.6924,
+        "wrist_roll": 0.6827,
+        "gripper": 51.244
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": -30.5149,
+        "shoulder_pitch": -32.5132,
+        "elbow_pitch": 71.0428,
+        "wrist_pitch": -38.816,
+        "wrist_roll": 0.4802,
+        "gripper": 56.4535
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": -27.4708,
+        "shoulder_pitch": -32.143,
+        "elbow_pitch": 70.4712,
+        "wrist_pitch": -38.9011,
+        "wrist_roll": 0.3408,
+        "gripper": 60.0397
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": -25.3753,
+        "shoulder_pitch": -31.8881,
+        "elbow_pitch": 70.0777,
+        "wrist_pitch": -38.9597,
+        "wrist_roll": 0.2448,
+        "gripper": 62.5085
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": -23.9327,
+        "shoulder_pitch": -31.7126,
+        "elbow_pitch": 69.8068,
+        "wrist_pitch": -39.0,
+        "wrist_roll": 0.1787,
+        "gripper": 64.208
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": -22.9397,
+        "shoulder_pitch": -31.5918,
+        "elbow_pitch": 69.6204,
+        "wrist_pitch": -39.0278,
+        "wrist_roll": 0.1332,
+        "gripper": 65.3779
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": -22.256,
+        "shoulder_pitch": -31.5087,
+        "elbow_pitch": 69.492,
+        "wrist_pitch": -39.0469,
+        "wrist_roll": 0.1019,
+        "gripper": 66.1833
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": -21.7854,
+        "shoulder_pitch": -31.4515,
+        "elbow_pitch": 69.4036,
+        "wrist_pitch": -39.06,
+        "wrist_roll": 0.0804,
+        "gripper": 66.7377
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": -21.4615,
+        "shoulder_pitch": -31.4121,
+        "elbow_pitch": 69.3428,
+        "wrist_pitch": -39.0691,
+        "wrist_roll": 0.0655,
+        "gripper": 67.1194
+      }
+    },
+    {
+      "subgoal_id": 6,
+      "subgoal": "MOVE(glass_rod)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": -21.2384,
+        "shoulder_pitch": -31.3849,
+        "elbow_pitch": 69.3009,
+        "wrist_pitch": -39.0753,
+        "wrist_roll": 0.0553,
+        "gripper": 67.3821
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": -14.6901,
+        "shoulder_pitch": -31.6142,
+        "elbow_pitch": 69.8427,
+        "wrist_pitch": -39.7241,
+        "wrist_roll": 0.0423,
+        "gripper": 58.3355
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": -10.1821,
+        "shoulder_pitch": -31.772,
+        "elbow_pitch": 70.2157,
+        "wrist_pitch": -40.1708,
+        "wrist_roll": 0.0333,
+        "gripper": 52.1079
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": -7.0789,
+        "shoulder_pitch": -31.8806,
+        "elbow_pitch": 70.4725,
+        "wrist_pitch": -40.4782,
+        "wrist_roll": 0.0271,
+        "gripper": 47.8208
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": -4.9426,
+        "shoulder_pitch": -31.9554,
+        "elbow_pitch": 70.6493,
+        "wrist_pitch": -40.6899,
+        "wrist_roll": 0.0228,
+        "gripper": 44.8695
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": -3.472,
+        "shoulder_pitch": -32.0069,
+        "elbow_pitch": 70.7709,
+        "wrist_pitch": -40.8356,
+        "wrist_roll": 0.0199,
+        "gripper": 42.8379
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": -2.4597,
+        "shoulder_pitch": -32.0423,
+        "elbow_pitch": 70.8547,
+        "wrist_pitch": -40.9359,
+        "wrist_roll": 0.0179,
+        "gripper": 41.4393
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": -1.7627,
+        "shoulder_pitch": -32.0667,
+        "elbow_pitch": 70.9124,
+        "wrist_pitch": -41.0049,
+        "wrist_roll": 0.0165,
+        "gripper": 40.4765
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": -1.283,
+        "shoulder_pitch": -32.0835,
+        "elbow_pitch": 70.9521,
+        "wrist_pitch": -41.0525,
+        "wrist_roll": 0.0155,
+        "gripper": 39.8138
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": -0.9527,
+        "shoulder_pitch": -32.0951,
+        "elbow_pitch": 70.9794,
+        "wrist_pitch": -41.0852,
+        "wrist_roll": 0.0149,
+        "gripper": 39.3575
+      }
+    },
+    {
+      "subgoal_id": 7,
+      "subgoal": "PICK_2(glass_rod)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": -0.7254,
+        "shoulder_pitch": -32.1031,
+        "elbow_pitch": 70.9982,
+        "wrist_pitch": -41.1077,
+        "wrist_roll": 0.0144,
+        "gripper": 39.0434
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": 5.5559,
+        "shoulder_pitch": -32.3371,
+        "elbow_pitch": 71.499,
+        "wrist_pitch": -40.4466,
+        "wrist_roll": 0.0145,
+        "gripper": 30.6016
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": 9.8799,
+        "shoulder_pitch": -32.4983,
+        "elbow_pitch": 71.8438,
+        "wrist_pitch": -39.9915,
+        "wrist_roll": 0.0146,
+        "gripper": 24.7903
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": 12.8565,
+        "shoulder_pitch": -32.6092,
+        "elbow_pitch": 72.0812,
+        "wrist_pitch": -39.6782,
+        "wrist_roll": 0.0147,
+        "gripper": 20.7898
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": 14.9056,
+        "shoulder_pitch": -32.6856,
+        "elbow_pitch": 72.2445,
+        "wrist_pitch": -39.4626,
+        "wrist_roll": 0.0147,
+        "gripper": 18.0359
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": 16.3163,
+        "shoulder_pitch": -32.7382,
+        "elbow_pitch": 72.357,
+        "wrist_pitch": -39.3141,
+        "wrist_roll": 0.0148,
+        "gripper": 16.14
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": 17.2873,
+        "shoulder_pitch": -32.7743,
+        "elbow_pitch": 72.4344,
+        "wrist_pitch": -39.2119,
+        "wrist_roll": 0.0148,
+        "gripper": 14.835
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": 17.9558,
+        "shoulder_pitch": -32.7993,
+        "elbow_pitch": 72.4877,
+        "wrist_pitch": -39.1415,
+        "wrist_roll": 0.0148,
+        "gripper": 13.9365
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": 18.416,
+        "shoulder_pitch": -32.8164,
+        "elbow_pitch": 72.5244,
+        "wrist_pitch": -39.0931,
+        "wrist_roll": 0.0148,
+        "gripper": 13.3181
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": 18.7328,
+        "shoulder_pitch": -32.8282,
+        "elbow_pitch": 72.5497,
+        "wrist_pitch": -39.0598,
+        "wrist_roll": 0.0148,
+        "gripper": 12.8923
+      }
+    },
+    {
+      "subgoal_id": 8,
+      "subgoal": "MOVE(beaker_B)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": 18.9509,
+        "shoulder_pitch": -32.8363,
+        "elbow_pitch": 72.5671,
+        "wrist_pitch": -39.0368,
+        "wrist_roll": 0.0148,
+        "gripper": 12.5992
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": 24.832,
+        "shoulder_pitch": -33.039,
+        "elbow_pitch": 72.6381,
+        "wrist_pitch": -40.0089,
+        "wrist_roll": 0.009,
+        "gripper": 12.4015
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": 28.8805,
+        "shoulder_pitch": -33.1786,
+        "elbow_pitch": 72.6869,
+        "wrist_pitch": -40.678,
+        "wrist_roll": 0.005,
+        "gripper": 12.2654
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": 31.6676,
+        "shoulder_pitch": -33.2746,
+        "elbow_pitch": 72.7206,
+        "wrist_pitch": -41.1387,
+        "wrist_roll": 0.0022,
+        "gripper": 12.1717
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": 33.5862,
+        "shoulder_pitch": -33.3407,
+        "elbow_pitch": 72.7437,
+        "wrist_pitch": -41.4558,
+        "wrist_roll": 0.0003,
+        "gripper": 12.1072
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": 34.9069,
+        "shoulder_pitch": -33.3863,
+        "elbow_pitch": 72.7597,
+        "wrist_pitch": -41.6741,
+        "wrist_roll": -0.001,
+        "gripper": 12.0628
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": 35.8161,
+        "shoulder_pitch": -33.4176,
+        "elbow_pitch": 72.7706,
+        "wrist_pitch": -41.8243,
+        "wrist_roll": -0.0019,
+        "gripper": 12.0322
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": 36.442,
+        "shoulder_pitch": -33.4392,
+        "elbow_pitch": 72.7782,
+        "wrist_pitch": -41.9278,
+        "wrist_roll": -0.0025,
+        "gripper": 12.0112
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": 36.8729,
+        "shoulder_pitch": -33.454,
+        "elbow_pitch": 72.7834,
+        "wrist_pitch": -41.999,
+        "wrist_roll": -0.003,
+        "gripper": 11.9967
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": 37.1695,
+        "shoulder_pitch": -33.4642,
+        "elbow_pitch": 72.787,
+        "wrist_pitch": -42.048,
+        "wrist_roll": -0.0033,
+        "gripper": 11.9867
+      }
+    },
+    {
+      "subgoal_id": 9,
+      "subgoal": "STIR(5)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": 37.3737,
+        "shoulder_pitch": -33.4713,
+        "elbow_pitch": 72.7894,
+        "wrist_pitch": -42.0818,
+        "wrist_roll": -0.0035,
+        "gripper": 11.9798
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": 31.3488,
+        "shoulder_pitch": -33.0975,
+        "elbow_pitch": 72.094,
+        "wrist_pitch": -42.6319,
+        "wrist_roll": -0.0044,
+        "gripper": 21.0599
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": 27.2013,
+        "shoulder_pitch": -32.8402,
+        "elbow_pitch": 71.6152,
+        "wrist_pitch": -43.0106,
+        "wrist_roll": -0.0051,
+        "gripper": 27.3105
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": 24.3461,
+        "shoulder_pitch": -32.6631,
+        "elbow_pitch": 71.2856,
+        "wrist_pitch": -43.2713,
+        "wrist_roll": -0.0055,
+        "gripper": 31.6135
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": 22.3807,
+        "shoulder_pitch": -32.5412,
+        "elbow_pitch": 71.0587,
+        "wrist_pitch": -43.4508,
+        "wrist_roll": -0.0058,
+        "gripper": 34.5757
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": 21.0276,
+        "shoulder_pitch": -32.4572,
+        "elbow_pitch": 70.9025,
+        "wrist_pitch": -43.5743,
+        "wrist_roll": -0.006,
+        "gripper": 36.6148
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": 20.0962,
+        "shoulder_pitch": -32.3994,
+        "elbow_pitch": 70.795,
+        "wrist_pitch": -43.6594,
+        "wrist_roll": -0.0062,
+        "gripper": 38.0186
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": 19.455,
+        "shoulder_pitch": -32.3597,
+        "elbow_pitch": 70.721,
+        "wrist_pitch": -43.7179,
+        "wrist_roll": -0.0063,
+        "gripper": 38.9849
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": 19.0136,
+        "shoulder_pitch": -32.3323,
+        "elbow_pitch": 70.67,
+        "wrist_pitch": -43.7582,
+        "wrist_roll": -0.0064,
+        "gripper": 39.6501
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": 18.7097,
+        "shoulder_pitch": -32.3134,
+        "elbow_pitch": 70.635,
+        "wrist_pitch": -43.7859,
+        "wrist_roll": -0.0064,
+        "gripper": 40.1081
+      }
+    },
+    {
+      "subgoal_id": 10,
+      "subgoal": "RELEASE(glass_rod_origin)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": 18.5005,
+        "shoulder_pitch": -32.3005,
+        "elbow_pitch": 70.6108,
+        "wrist_pitch": -43.805,
+        "wrist_roll": -0.0064,
+        "gripper": 40.4233
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 0,
+      "joints": {
+        "base_yaw": 12.6758,
+        "shoulder_pitch": -33.3303,
+        "elbow_pitch": 71.9964,
+        "wrist_pitch": -42.978,
+        "wrist_roll": 0.0033,
+        "gripper": 48.0389
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 1,
+      "joints": {
+        "base_yaw": 8.6661,
+        "shoulder_pitch": -34.0393,
+        "elbow_pitch": 72.9502,
+        "wrist_pitch": -42.4087,
+        "wrist_roll": 0.01,
+        "gripper": 53.2815
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 2,
+      "joints": {
+        "base_yaw": 5.9058,
+        "shoulder_pitch": -34.5273,
+        "elbow_pitch": 73.6068,
+        "wrist_pitch": -42.0167,
+        "wrist_roll": 0.0146,
+        "gripper": 56.8905
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 3,
+      "joints": {
+        "base_yaw": 4.0056,
+        "shoulder_pitch": -34.8633,
+        "elbow_pitch": 74.0588,
+        "wrist_pitch": -41.7469,
+        "wrist_roll": 0.0177,
+        "gripper": 59.3749
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 4,
+      "joints": {
+        "base_yaw": 2.6975,
+        "shoulder_pitch": -35.0946,
+        "elbow_pitch": 74.3699,
+        "wrist_pitch": -41.5612,
+        "wrist_roll": 0.0199,
+        "gripper": 61.0852
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 5,
+      "joints": {
+        "base_yaw": 1.797,
+        "shoulder_pitch": -35.2538,
+        "elbow_pitch": 74.5841,
+        "wrist_pitch": -41.4333,
+        "wrist_roll": 0.0214,
+        "gripper": 62.2626
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 6,
+      "joints": {
+        "base_yaw": 1.1771,
+        "shoulder_pitch": -35.3634,
+        "elbow_pitch": 74.7316,
+        "wrist_pitch": -41.3453,
+        "wrist_roll": 0.0225,
+        "gripper": 63.0731
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 7,
+      "joints": {
+        "base_yaw": 0.7504,
+        "shoulder_pitch": -35.4388,
+        "elbow_pitch": 74.8331,
+        "wrist_pitch": -41.2847,
+        "wrist_roll": 0.0232,
+        "gripper": 63.631
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 8,
+      "joints": {
+        "base_yaw": 0.4566,
+        "shoulder_pitch": -35.4908,
+        "elbow_pitch": 74.903,
+        "wrist_pitch": -41.243,
+        "wrist_roll": 0.0237,
+        "gripper": 64.0151
+      }
+    },
+    {
+      "subgoal_id": 11,
+      "subgoal": "MOVE(home)",
+      "local_step": 9,
+      "joints": {
+        "base_yaw": 0.2544,
+        "shoulder_pitch": -35.5265,
+        "elbow_pitch": 74.9511,
+        "wrist_pitch": -41.2143,
+        "wrist_roll": 0.024,
+        "gripper": 64.2795
+      }
+    }
+  ],
+  "final_joints": {
+    "base_yaw": 0.2544,
+    "shoulder_pitch": -35.5265,
+    "elbow_pitch": 74.9511,
+    "wrist_pitch": -41.2143,
+    "wrist_roll": 0.024,
+    "gripper": 64.2795
+  }
+}
